@@ -1,7 +1,8 @@
 #######frontend script
 
 dnf install nginx -y
-
+##copy file on below loc
+cp expense.conf /etc/nginx/default.d/expense.conf
 ##Remove the default content that web server is serving.
 
 rm -rf /usr/share/nginx/html/*
@@ -13,8 +14,6 @@ curl -o /tmp/frontend.zip https://expense-artifacts.s3.amazonaws.com/frontend.zi
 
 cd /usr/share/nginx/html
 unzip /tmp/frontend.zip
-
-cp expense.conf /etc/nginx/default.d/expense.conf
 
 ##Start & Enable Nginx service
 
