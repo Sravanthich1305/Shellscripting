@@ -8,7 +8,7 @@ done;
 ##name
 a=10
 while [ "$a" -gt 0 ]; do
-  echo  "\e[31m SRAVI \e[0m"
+  echo -e "\e[32m SRAVI \e[0m"
   a=$(($a-1))
   sleep 1
 done
