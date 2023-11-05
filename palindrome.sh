@@ -7,9 +7,13 @@ original=$number
 
 while [ $number -ne 0 ]
 do
-  reminder=$(( $number % 10 ))
-  reverse=$(( $reverse * 10 + $remainder ))
-  number=$(( $number / 10 ))
+
+    remainder=$(( $number % 10 ))
+    reverse=$(( $reverse * 10 + $remainder ))
+    number=$(( $number / 10 ))
+  ##reminder=$(( $number % 10 ))
+  ##reverse=$(( $reverse * 10 + $remainder ))
+  ##number=$(( $number / 10 ))
 done
 
 if [ $original -eq $reverse ]
