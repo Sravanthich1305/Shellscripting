@@ -3,4 +3,4 @@
 USERNAME=$1
 PASSWORD=$2
 
-echo "username::  Password:: "
+echo "username::$1  Password::$2 "
