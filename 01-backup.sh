@@ -1,5 +1,6 @@
 #!/bin/bash
 ##backup using shell script
+
 #files list to be backup.
 backup_files="/var/log/messages"
 
@@ -7,7 +8,7 @@ backup_files="/var/log/messages"
 dest="/home/centos/"
 
 # Create archive filename.
-archive_file='$(date "+%Y-%m-%d-%H:%M:%S")'.tgz"
+archive_file='$(date "+%Y-%m-%d-%H:%M:%S")'.tgz
 
 # Print start status message.
 echo "Backing up $backup_files to $dest/$archive_file"
