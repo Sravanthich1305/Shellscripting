@@ -6,3 +6,4 @@ read text
 
 # Counting words
 word=$(echo -n "$text" | wc -w)
+echo "Number of Words = $word"
