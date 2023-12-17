@@ -8,7 +8,7 @@ backup_files="/var/log/messages"
 dest="/home/centos/"
 time=$(date +%m-%d-%y)
 # Create archive filename.
-archive_file=$time.tz
+archive_file=backup_messages_$time.tz
 
 # Print start status message.
 echo "Backing up $backup_files to $dest/$archive_file"
