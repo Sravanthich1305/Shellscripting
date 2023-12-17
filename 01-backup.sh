@@ -6,14 +6,14 @@ backup_files="/var/log/messages"
 
 # enter the destination
 dest="/home/centos/"
-
+time=$(date +%m-%d-%y)
 # Create archive filename.
-archive_file='$(date "+%Y-%m-%d-%H:%M:%S")'.tgz
+archive_file=$time.tz
 
 # Print start status message.
 echo "Backing up $backup_files to $dest/$archive_file"
 # Backup the files using tar.
-tar czf $dest/$archive_file $backup_files
+tar cvzf $dest/$archive_file $backup_files
 echo "Backup has completed"
 
 #lisitng the backup file
