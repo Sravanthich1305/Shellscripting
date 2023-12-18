@@ -6,10 +6,10 @@ Y="\e[33m"
 N="\e[0m"
 
 # Set the directory path where log files are located
-log_directory="/var/log"
+log_directory="/var/log/"
 
 # Set the threshold age for log files
-threshold_days=1
+threshold_days=14
 
 # delete old log files
 delete_old_logs() {
