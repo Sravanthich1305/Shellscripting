@@ -9,7 +9,7 @@ N="\e[0m"
 log_directory="/var/log"
 
 # Set the threshold age for log files
-threshold_days=5
+threshold_days=1
 
 # delete old log files
 delete_old_logs() {
