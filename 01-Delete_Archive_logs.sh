@@ -6,7 +6,7 @@ Y="\e[33m"
 N="\e[0m"
 
 # Set the directory path where log files are located
-log_directory="/var/log/mail"
+log_directory="/var/log/maillog"
 
 # Set the threshold age for log files
 threshold_days=5
